@@ -1,0 +1,121 @@
+.signUpPage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #878787;
+
+}
+
+.pageContent {
+    height: 60%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid yellow;
+}
+
+.mainContent {
+    // border: 1px solid green;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imageContent {
+    background-color: #F5F5F5;
+    // border: 1px solid red;
+    height: 90%;
+    width: 50%;
+    // border-radius: 21px;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.Shoppingimg{
+    border-radius: 50%;
+    height:245px;
+    width: 245px;
+    margin-top: 20px;
+}
+
+.imgtextContent{
+    margin-top: 20px;
+}
+
+.imagetext {
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-top: 20px;
+}
+
+.SignUppart {
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px #00000029;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid red;
+}
+
+// .loginContent {
+//     height: 90%;
+//     width: 80%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+// }
+
+// .topButton {
+
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     height: 5%;
+//     width: 100%;
+// }
+
+// .topLoginButton {
+//     text-align: left;
+//     font: normal normal medium 25px/33px Roboto;
+//     font-size: 25px;
+//     letter-spacing: 0px;
+//     color: #878787;
+//     text-transform: uppercase;
+//     opacity: 1;
+// }
+
+// .topSignUpButton {
+//     font: normal normal medium 25px/33px Roboto;
+//     font-size: 25px;
+//     letter-spacing: 0px;
+//     color: #0A0102;
+//     text-transform: uppercase;
+//     opacity: 1;
+// }

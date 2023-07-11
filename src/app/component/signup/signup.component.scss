@@ -1,0 +1,135 @@
+
+.loginContent {
+    height: 95%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    // border: 1px solid green;
+    
+}
+
+.topButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    // border: 1px solid orange;
+}
+
+.topLoginButton {
+    text-align: left;
+    font: normal normal medium 25px/33px Roboto;
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #878787;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.topSignUpButton {
+    font: normal normal medium 25px/33px Roboto;
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+.nameContent {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 85%;
+}
+
+.nameLabel {
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    font-size: 10px;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.inputBox {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+    width: 252px;
+    height: 30px;
+}
+
+.emailContent {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 85%;
+    margin-top: 10px;
+}
+
+.emailLabel {
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: capitalize;
+    opacity: 1;
+    
+}
+
+.passContent {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 85%;
+    margin-top: 10px;
+}
+
+.passLabel {
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: capitalize;
+    opacity: 1;
+    
+}
+
+.mobileContent {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 85%;
+    margin-top: 10px;
+}
+
+.mobileLabel {
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: capitalize;
+    opacity: 1;
+  
+}
+
+.SignUpContent {
+    
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.SignUpButton {
+    width: 100%;
+    height: 37px;
+    background: #A03037 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    color: #ffffff;
+}

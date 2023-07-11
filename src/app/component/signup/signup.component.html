@@ -1,0 +1,74 @@
+<form [formGroup]="sigUpForm" (ngSubmit)="onSubmit()">
+<mat-card-content class="loginContent">
+    <mat-card-actions class="topButton">
+        <mat-label routerLink="/user/login" class="topLoginButton">LOGIN</mat-label>
+        <mat-label class="topSignUpButton">SIGNUP</mat-label>
+    </mat-card-actions>
+
+    <mat-card-content class="nameContent">
+        <mat-label class="nameLabel">Full Name</mat-label>
+        <input class="inputBox" type="text" matInput placeholder="" formControlName="fullName">
+        
+    </mat-card-content>
+    <mat-card-content class="emailContent">
+        <mat-label class="emailLabel">Email id</mat-label>
+        <input class="inputBox" type="email" matInput placeholder="" formControlName="emailid">
+    </mat-card-content>
+    <mat-card-content class="passContent">
+        <mat-label class="passLabel">Password</mat-label>
+        <input class="inputBox" type="password" matInput placeholder="" formControlName="password">
+
+    </mat-card-content>
+    <mat-card-content class="mobileContent">
+        <mat-label class="mobileLabel">Mobile Number</mat-label>
+        <input class="inputBox" type="text" matInput placeholder="" formControlName="mobile">
+    </mat-card-content>
+    <mat-card-actions class="SignUpContent">
+        <button class="SignUpButton">Signup</button>
+    </mat-card-actions>
+
+</mat-card-content>
+</form>
+<!-- 
+<div class="signUpPage">
+    <div class="pageContent">
+        <div class="mainContent">
+            <mat-card class="imageContent">
+                <img src="../../../assets/shoping.png" height="245px" width="245px"  class="Shoppingimg">
+                <mat-card-content >
+                    <mat-label class="imagetext">ONLINE BOOK SHOPPING</mat-label>
+                    
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="SignUppart">
+                <mat-card-content class="loginContent">
+                    <mat-card-actions class="topButton">
+                        <mat-label routerLink="/signin" class="topLoginButton">LOGIN</mat-label>
+                        <mat-label  class="topSignUpButton">SIGNUP</mat-label>
+                    </mat-card-actions>
+                    <mat-card-content class="nameContent">
+                        <mat-label class="nameLabel">Full Name</mat-label>
+                        <input class="inputBox" type="text" matInput placeholder="" formControlName="fullName">
+                    </mat-card-content>
+                    <mat-card-content class="emailContent">
+                        <mat-label class="emailLabel">Email id</mat-label>
+                        <input class="inputBox" type="email" matInput placeholder="" formControlName="emailid">
+                    </mat-card-content>
+                    <mat-card-content class="passContent">
+                        <mat-label class="passLabel">Password</mat-label>
+                        <input class="inputBox" type="password" matInput placeholder="" formControlName="password">
+                        
+                    </mat-card-content>
+                    <mat-card-content class="mobileContent">
+                        <mat-label class="mobileLabel">Mobile Number</mat-label>
+                        <input class="inputBox" type="text" matInput placeholder="" formControlName="mobile">
+                    </mat-card-content>
+                    <mat-card-actions class="SignUpContent">
+                        <button class="SignUpButton">Signup</button>
+                    </mat-card-actions>
+                    
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div> -->
