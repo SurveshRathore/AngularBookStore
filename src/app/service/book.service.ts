@@ -62,4 +62,14 @@ export class BookService {
     return this.httpservice.getService('WishList/GetWishlistDetails',true,header)
   }
 
+  increaseQuantity(reqData:any){
+    let header = {
+      headers: new HttpHeaders({
+        'Content-type' : 'application/json',
+        'Authorization':'Bearer '+this.token
+      })
+    }
+    return this.httpservice.putService('Cart/UpdateBookInCart?bookQuantity=1&cartID=1',true);
+  }
+
 }

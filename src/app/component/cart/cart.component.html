@@ -1,0 +1,130 @@
+<div class="cartPage">
+    <div class="cartHeading">
+        <div class="hometext">Home &nbsp; / &nbsp;</div>
+        <div class="carttext">My cart</div>
+    </div>
+    
+        <mat-card class="cartDetails">
+            <mat-card-header class="cartHeader">
+                <mat-card-title>My Cart({{cartLength}})</mat-card-title>
+                
+                <select>
+                    <option><img src="../../../assets/location_on_FILL0_wght400_GRAD0_opsz48.png">Use current location</option>
+                </select>
+            </mat-card-header>
+            <mat-card-content class="cartAllBook">
+                <div class="cartBody" *ngFor="let book of bookCart">
+                    <div class="cartImg">
+                        <img src="../../../assets/Image 11.png" class="Bookimg">
+                    </div>
+                    <div class="cartBodyContent">
+                        <mat-card-title class="booktitle">{{book.bookName}}</mat-card-title>
+                        <mat-card-subtitle class="authorname">{{book.authorName}}</mat-card-subtitle>
+                        <div class="bookpricecontent">
+                            <mat-card-title class="discountPrice">Rs. {{book.discountPrice}}</mat-card-title>
+                        <mat-card-subtitle class="originalPrice">Rs. {{book.originalPrice}}</mat-card-subtitle>
+                        </div>
+                        
+                        <mat-card-title-group class="addSubBtn">
+                            <button class="subbtn" (click)="decrementQuantity(book.cartId, book.bookQuantity)">-</button>
+                            <input class="inputBtn" placeholder="{{book.bookQuantity}}">
+                            <button class="addbtn" (click)="incrementQuantity(book.cartId, book.bookQuantity)">+</button>
+                            <button class="removeBtn" (click)="RemoveFromCart(book.cartId)">Remove</button>
+                        </mat-card-title-group>
+                    </div>
+                    
+                </div>
+                
+                
+            </mat-card-content>
+            <mat-card-footer class="cartButtonContent">
+                <button class="cartButton" (click)="addOrder()">PLACE ORDER</button>
+            </mat-card-footer>
+        </mat-card>
+
+        <mat-card class="customerDetails">
+            <mat-card-header class="cartHeader">
+                <mat-card-title>Customer Details</mat-card-title>
+                
+                <button class="addAddBtn">Add New Address</button>
+            </mat-card-header>
+            <form class="custDetailForm" >
+                <div class="namemobile">
+                    <div>
+                        <mat-card-content class="nameContent">
+                            <mat-label class="nameLabel">Full Name</mat-label>
+                            <input class="inputBox" type="text" matInput placeholder="" >                      
+                        </mat-card-content>
+                    </div>
+                    <div>
+                        <mat-card-content class="mobileContent">
+                            <mat-label class="nameLabel">Mobile Number</mat-label>
+                            <input class="inputBox" type="text" matInput placeholder="" >
+                        </mat-card-content>
+                    </div>
+                    
+                </div>
+                <mat-card-content class="addContent">
+                    <mat-label class="nameLabel">Address</mat-label>
+                    <input class="inputBoxAdd" type="text" matInput placeholder="" >                      
+                </mat-card-content>
+                <div class="cityStateContent">
+                    <div>
+                        <mat-card-content class="cityTownContent">
+                            <mat-label class="nameLabel">city/town</mat-label>
+                            <input class="inputBox" type="text" matInput placeholder="" >                      
+                        </mat-card-content>
+                    </div>
+                    <div>
+                        <mat-card-content class="stateContent">
+                            <mat-label class="nameLabel">State</mat-label>
+                            <input class="inputBox" type="text" matInput placeholder="" >
+                        </mat-card-content>
+                    </div>
+                    
+                </div>
+                <div class="typeContent">
+                    <mat-label class="nameLabel">Type</mat-label>
+                    <mat-radio-group aria-label="Select an option" >
+                        
+                        <mat-radio-button class="radioLabel" value="1">Home</mat-radio-button>
+                        <mat-radio-button class="radioLabel" value="2">Work</mat-radio-button>
+                        <mat-radio-button class="radioLabel" value="2">Other</mat-radio-button>
+                      </mat-radio-group>
+                </div>
+                <div>
+                    
+                </div>
+            </form>
+            <mat-card-footer class="cartButtonContent">
+                <button class="cartButton">CONTINUE</button>
+            </mat-card-footer>
+        </mat-card>
+        <mat-card class="orderDetails">
+            <mat-card-header class="cartHeader">
+                <mat-card-title>Order Summary</mat-card-title>
+                
+            </mat-card-header>
+            <mat-card-content>
+                <div class="cartBody">
+                    <div class="cartImg">
+                        <img src="../../../assets/Image 11.png" class="Bookimg">
+                    </div>
+                    <div class="cartBodyContent">
+                        <mat-card-title class="booktitle">Don't Make Me Think</mat-card-title>
+                        <mat-card-subtitle class="authorname">By Steve kurg</mat-card-subtitle>
+                        <div class="bookpricecontent">
+                            <mat-card-title class="discountPrice">Rs. 1500</mat-card-title>
+                        <mat-card-subtitle class="originalPrice">Rs. 2000</mat-card-subtitle>
+                        </div>
+                    </div>                    
+                </div>
+                
+                
+            </mat-card-content>
+            <mat-card-footer class="cartButtonContent">
+                <button (click)="placeOrder()" class="cartButton">CHECKOUT</button>
+            </mat-card-footer>
+        </mat-card>
+
+</div>

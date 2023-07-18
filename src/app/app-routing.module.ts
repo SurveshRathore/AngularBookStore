@@ -4,6 +4,11 @@ import { SigninComponent } from './component/signin/signin.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { LoginDashboardComponent } from './component/login-dashboard/login-dashboard.component';
 import { BookDashboardComponent } from './component/book-dashboard/book-dashboard.component';
+import { BookcartComponent } from './component/bookcart/bookcart.component';
+import { BookDetailsComponent } from './component/book-details/book-details.component';
+import { CartComponent } from './component/cart/cart.component';
+import { WhishlistComponent } from './component/whishlist/whishlist.component';
+import { OrderComponent } from './component/order/order.component';
 
 const routes: Routes = [
   {path:"signin", component:SigninComponent},
@@ -13,7 +18,14 @@ children:[
   {path: 'register',component:SignupComponent},
   {path: 'login', component:SigninComponent}
 ]},
-{path:'home', component:BookDashboardComponent}
+{path:'home', component:BookDashboardComponent,
+children:[
+  {path:'allbooks',component:BookcartComponent},
+  {path: 'cart', component:CartComponent},
+  {path:'bookdetails',component:BookDetailsComponent},
+  {path: 'whishlist', component:WhishlistComponent},
+  {path: 'order', component:OrderComponent}
+]}
 ];
 
 @NgModule({

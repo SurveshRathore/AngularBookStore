@@ -11,6 +11,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { HttpClientModule } from '@angular/common/http';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatMenuModule} from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +21,12 @@ import { SignupComponent } from './component/signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginDashboardComponent } from './component/login-dashboard/login-dashboard.component';
 import { BookDashboardComponent } from './component/book-dashboard/book-dashboard.component';
+import { BookcartComponent } from './component/bookcart/bookcart.component';
+import { BookDetailsComponent } from './component/book-details/book-details.component';
+import { CartComponent } from './component/cart/cart.component';
+import { WhishlistComponent } from './component/whishlist/whishlist.component';
+import { FilterPipe } from './Pipes/filter.pipe';
+import { OrderComponent } from './component/order/order.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +34,13 @@ import { BookDashboardComponent } from './component/book-dashboard/book-dashboar
     SigninComponent,
     SignupComponent,
     LoginDashboardComponent,
-    BookDashboardComponent
+    BookDashboardComponent,
+    BookcartComponent,
+    BookDetailsComponent,
+    CartComponent,
+    WhishlistComponent,
+    FilterPipe,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +54,10 @@ import { BookDashboardComponent } from './component/book-dashboard/book-dashboar
     FormsModule,
     HttpClientModule,
     MatSnackBarModule,
-    MatIconModule
+    MatIconModule,
+    MatRadioModule,
+    MatMenuModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

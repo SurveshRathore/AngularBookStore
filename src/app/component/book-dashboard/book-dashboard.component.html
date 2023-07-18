@@ -1,27 +1,46 @@
-<div class="top">
-    <div class="firstlogo">
-        <div class="first">
-            <img src="../../../assets/education.svg" height="35px" style="margin-top: 15px;">
+
+<div class="headerContent">
+    <div (click)="openBook()" class="leftContent">
+        <div class="bookImg">
+            <img src="../../../assets/education.svg" class="bookIcon">
         </div>
-        <div class="first1">
-            <span style="font-size: 28px;color: white;">BOOKSTORE</span>
+        <div class="bookText">
+            Bookstore
         </div>
     </div>
-    <div class="secondsearch">
-        <img style="margin-left: 10px; height: 20px;margin-top: 8px;color: gray;" src="../../../assets/search_FILL0_wght400_GRAD0_opsz48.png">
-        <input class="inputSearchbox" type="search" placeholder="Search...">
+    <div class="searchContent">
+        <img src="../../../assets/search_FILL0_wght400_GRAD0_opsz48.png" class="seachIcon">
+        <input type="search" placeholder="search..." class="searchInputBox" (keyup)="searchNote($event)">
     </div>
-    <div class="thirdicons">
-        <div class="third1">
-            <img src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.png" class="thirdimg1" style=" filter: invert(100%);">
-            <span style="margin-left:20px;color: white;"> profile</span>
+    <div class="rightContent">
+        <div class="user">
+            <mat-icon [ngStyle]="{'color':'white'}" [matMenuTriggerFor]="menu">person_outline</mat-icon>
+            <!-- <mat-icon class="userIcon">person_outline</mat-icon> -->
+            <!-- <img src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.png" class="userIcon"> -->
+            <span class="userText">Profile</span>
+            <mat-menu #menu = "matMenu">
+                <button (click)="logout()" mat-menu-item>LogOut</button>
+            </mat-menu>
         </div>
-        <div class="third2" style="margin-left: 1px;" routerLink="/Home/Cart">
-            <img src="../../../assets/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" class="thirdimg2">
-            <span style="margin-left: 37px;color: white;">Cart</span>
+        <div (click)="openCart()" class="cart">
+            <mat-icon class="cartIcon" [ngStyle]="{'color':'white'}" fontSet="material-icons-outlined">shopping_cart</mat-icon>
+            <!-- <mat-icon class="cartIcon">shopping_cart</mat-icon> -->
+            <!-- <img src="../../../assets/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" class="cartIcon"> -->
+            <span class="cartText">Cart</span>
         </div>
     </div>
 </div>
-<div>
-    Book
+<router-outlet></router-outlet>
+<div class="Bookfooter">
+    <p class="footerContent">Copyright © 2023, Bookstore Private Limited. All Rights Reserved</p>
 </div>
+<!-- <div class="bookData">
+    <div class="bookHeading">
+        <div>Books</div>
+        <div>Sort by relevance</div>
+    </div>
+    
+    <div class="bookContent">
+        <router-outlet></router-outlet>
+    </div>
+</div> -->

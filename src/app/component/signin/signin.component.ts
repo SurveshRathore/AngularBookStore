@@ -34,9 +34,10 @@ export class SigninComponent {
         Password: this.siginForm.value.password
       }
       this.user.login(payload).subscribe((response:any)=>{
-        console.log(response);
-        localStorage.setItem('token',response);
+        console.log(response.result);
+        localStorage.setItem('token',response.result);
         this.snackBar.open("Login Successfully", '',{duration: 2000})
+        this.route.navigateByUrl("/home/allbooks")
       })
     }
   }
