@@ -66,7 +66,7 @@ export class BookService {
     let header = {
       headers: new HttpHeaders({
         'Content-type' : 'application/json',
-        'Authorization':'Bearer '+this.token
+        'Authorization':'Bearer '+ this.token
       })
     }
     return this.httpservice.patchService('Cart/UpdateBookInCart?bookQuantity='+reqData.bookQuantity+'&cartID='+reqData.cartID,reqData,true,header);
