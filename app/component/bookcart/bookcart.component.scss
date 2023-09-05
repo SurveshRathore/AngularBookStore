@@ -1,0 +1,177 @@
+
+.bookData{
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid red;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+.bookHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid rgb(107, 55, 204);
+    height: 50px;
+    margin-right: 80px;
+}
+
+.booktext{
+    text-align: left;
+    font: normal normal normal 25px/26px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    
+    opacity: 1;
+}
+
+.bookcount{
+    font: normal normal normal 15px/16px Roboto;
+}
+
+.bookShow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    // border: 1px solid blue;
+}
+
+.bookContent{
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // border: 1px solid rgb(29, 202, 72);
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.bookCard {
+    width: 235px;
+    height: 275px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 3px;
+    opacity: 1; 
+    
+}
+
+// .bookCart:hover {
+//     box-shadow: 15px 5px #797373;
+// }
+
+.bookImgContent {
+    width: 200px;
+    height: 172px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    // border-radius: 2px 2px 0px 0px;
+    opacity: 1;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.bookImg {
+    width: 105px;
+    height: 135px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.bookTextContent{
+    display: flex;
+    flex-direction: column;
+}
+.bookTitle {
+    text-align: left;
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.bookAuthor {
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.ratingContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.rating {
+    text-align: left;
+    font: normal normal bold 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background-color: green;
+    opacity: 1;
+    padding-left: 2px;
+    padding-right: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratedPerson {
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+    margin-left: 5px;
+}
+
+.priceContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    // border: 1px solid red;
+}
+
+.discountPrice {
+    text-align: left;
+    font: normal normal bold 12px/16px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.originalPrice {
+    text-decoration: line-through;
+    font: normal normal normal 10px/13px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+    margin-left: 5px;
+}
+
+.pagination{
+    width: 70vw;
+    left: 15vw;    
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+::ng-deep .ngx-pagination .current{
+    background-color: #8F2B2F !important;
+    height: 20px;
+}
+::ng-deep .mypage{
+    display: flex;
+    position: relative;
+    right: 5vw !important;
+}

@@ -1,0 +1,29 @@
+<div class="whishlistPage">
+    <div class="whishlistHeading">
+        <div class="hometext">Home &nbsp; / &nbsp;</div>
+        <div class="whishlistText">My Order</div>
+    </div>
+    <mat-card class="whishlistDetails">
+        
+
+        <mat-card-content>
+            <div class="whishlistBody" *ngFor="let book of orderList">
+                <div class="whishlistImg">
+                    <img src="../../../assets/Image 11.png" class="Bookimg">
+                </div>
+                <div class="whishlistBodyContent">
+                    <div class="titleRemoveBtn">
+                        <mat-card-title class="booktitle">Don't Make Me Think</mat-card-title>
+                        <mat-icon class="delbtn">Order Placed on May 21</mat-icon>
+                    </div>
+                    
+                    <mat-card-subtitle class="authorname">By Steve kurg</mat-card-subtitle>
+                    <div class="bookpricecontent">
+                        <mat-card-title class="discountPrice">Rs. 1500</mat-card-title>
+                    <mat-card-subtitle class="originalPrice">Rs. 2000</mat-card-subtitle>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>        
+    </mat-card>
+</div>

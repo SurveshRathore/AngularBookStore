@@ -1,0 +1,58 @@
+<div class="bookData">
+    <div class="bookHeading">
+        <div class="booktext">Books<span class="bookcount">({{bookCount}}&nbsp;items)</span></div>
+        
+        <div>
+            <select (change)="sortBookByValue($event.target)">
+                <option value = "Sort by relevance">Sort by relevance</option>
+                <option value = "Price: Low to High">Price: Low to High</option>
+                <option value = "Price: High to Low">Price: High to Low</option>
+            </select>
+           
+        </div>
+    </div>
+    <div class="bookShow" >
+        
+        <mat-card class="bookContent" *ngFor="let book of BookArray | filter:searchData">
+            <mat-card-content class="bookCard">
+                <mat-card-header class="bookImgContent">
+                    <img src="../../../assets/Image 11.png" class="bookImg" (click)="openBookDetails(book)">
+                </mat-card-header>
+                <mat-card-content class="bookTextContent">
+                    <mat-card-title class="bookTitle">{{book.bookName}}</mat-card-title>
+                    <mat-card-subtitle class="bookAuthor">By {{book.authorName}}</mat-card-subtitle>
+                    <mat-card-title-group class="ratingContent">
+                        <span class="rating">{{book.bookTotalRating}}</span>
+                        <span class="ratedPerson"> ({{book.totalPeopleRated}})</span>
+
+                        <!-- <mat-card-subtitle class="rating">{{book.bookTotalRating}}</mat-card-subtitle>
+                        <mat-card-subtitle class="ratedPerson"> ({{book.totalPeopleRated}})</mat-card-subtitle> -->
+                    </mat-card-title-group>
+                    <mat-card-title-group class="priceContent">
+                        <span class="discountPrice">Rs. {{book.discountPrice}}</span>
+                        <span class="originalPrice">Rs. {{book.originalPrice}}</span>
+                        <!-- <mat-card-subtitle class="discountPrice">Rs. {{book.discountPrice}}</mat-card-subtitle>
+                        <mat-card-subtitle class="originalPrice">Rs. {{book.originalPrice}}</mat-card-subtitle> -->
+                    </mat-card-title-group>
+                </mat-card-content>
+            </mat-card-content>
+        </mat-card>
+        
+        </div>
+
+        
+    
+</div>
+<div class="pagination">
+    <mat-paginator [length]="totalRecords"
+              [pageSize]="pageSize"
+              [pageSizeOptions]="[6, 12, 18]"
+              [pageIndex]="pageIndex"
+              (page)="handlePageEvent($event)"
+              aria-label="Select page">
+</mat-paginator>
+</div>
+
+<!-- <div class="pagination">
+    <pagination-controls (pageChange)="p = $event" class="mypage"></pagination-controls>
+</div> -->

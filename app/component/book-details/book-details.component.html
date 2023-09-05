@@ -1,0 +1,87 @@
+<div class="bookDetailPage">
+    <div class="bookDetailHeading">
+        <div class="hometext">Home &nbsp; / &nbsp;</div>
+        <div class="carttext">Book({{bookId}})</div>
+    </div>
+    <div class="bookDetailsContent">
+        <div class="bookImgPart">
+            <div class="bookSmallImg">
+                <mat-card class="smallImg1"></mat-card>
+                <mat-card class="smallImg2"></mat-card>
+            </div>
+            <div>
+                <mat-card class="mainImg">
+                    <img class="mainImgContent" src="../../../assets/Image 11.png">
+                </mat-card>
+                <div class="bagWishBtn">
+                    <button class="bagBtn" (click)="addBookToCart()">ADD TO BAG</button>
+                    <button class="wishlistBtn" (click)="addBookToWhislist()"> 
+                        <mat-icon class="favoriteImg">favorite</mat-icon>WISHLIST</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="bookContentPart">
+            <div class="right">
+                <div class="bookdata">
+                    <div style="margin-top: 17px;font-size: 35px;font-weight: 400;">Don't think about me</div>
+                    <div style="margin-top: 4px;color: gray;margin-bottom: 7px;margin-top: 17px;font-size: 25px;">By
+                        Steve krug</div>
+                    <div style="background-color: rgb(0, 175, 0);margin-top: 15px;width: 60px;display: inline-block;">
+                        <h2 style="display: inline;color: white;margin-left: 5px;">4.5</h2>
+                        <img src="../../../assets/star.svg" height="15px" width="15px"
+                            style="display: inline;margin-left: 2px;filter: invert(100%);">
+                    </div>
+                    <p style="display: inline-block;margin-left: 10px;font-size: 17px;color: grey;">(5)
+                    </p>
+                    <div style="margin-top: 20px;margin-bottom: 20px;">
+                        <p style="display: inline;font-size: 35px;font-weight: 500;">Rs. 1500</p>
+                        <s>
+                            <p style="display: inline;font-size: 20px;color: gray;margin-left: 15px;">Rs.2000
+                            </p>
+                        </s>
+                    </div>
+                    <span
+                        style="color: lightgrey;">______________________________________________________________________________________</span>
+                </div>
+                <div class="bookdesc">
+                    <li style="font-size: 18px;color: grey;">Book Detail</li>
+                    <span style="font-size: 16.5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+                        dolorem maiores a ratione sint doloremque rem harum voluptatibus quod asperiores laboriosam ipsa
+                        sapiente, quam accusantium amet porro dicta laudantium eius?</span>
+                </div>
+                <span
+                    style="color: lightgrey;">___________________________________________________________________________________________</span>
+                <div class="feedback">
+                    <div>
+                        <span style="font-size: 30px;">Customer Feedback</span>
+                    </div>
+                    <div class="addingreview">
+                        <div>
+                            <span style="font-size: 20px;">Overall Rating</span>
+                        </div>
+                        <div class="starContainer">
+                            <input type="radio" name="rate" id="rate-1" value="1">
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star_border</mat-icon>
+
+
+                        </div>
+                        <textarea cols="30" rows="5"
+                            style="resize: none;margin-top: 5px;margin-left: 10px;width: 355%;border: none;outline: none;"
+                            placeholder="Write Your Review">
+                        </textarea>
+                        <button mat-raised-button color="primary"
+                            style="float: right;margin-right: 10px; background-color: #3371B5; color: #ffffff;">Submit</button>
+                        <!-- <button mat-flat-button color="primary" style="float: right;margin-right: 10px;">Submit</button> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

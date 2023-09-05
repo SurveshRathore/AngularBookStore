@@ -1,0 +1,48 @@
+
+<div class="headerContent">
+    <div (click)="openBook()" class="leftContent">
+        <div class="bookImg">
+            <img src="../../../assets/education.svg" class="bookIcon">
+        </div>
+        <div class="bookText">
+            Bookstore
+        </div>
+    </div>
+    <div class="searchContent">
+        <img src="../../../assets/search_FILL0_wght400_GRAD0_opsz48.png" class="seachIcon">
+        <input type="search" placeholder="search..." class="searchInputBox" (keyup)="searchNote($event)">
+    </div>
+    <div class="rightContent">
+        <div class="user">
+            <mat-icon [ngStyle]="{'color':'white'}" [matMenuTriggerFor]="menu">person_outline</mat-icon>
+            <!-- <mat-icon class="userIcon">person_outline</mat-icon> -->
+            <!-- <img src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.png" class="userIcon"> -->
+            <span class="userText">Profile</span>
+            <mat-menu #menu = "matMenu">
+                <button (click)="logout()" mat-menu-item>LogOut</button>
+                <button (click)="openWhishlist()" mat-menu-item>WhishList</button>
+                <button (click)="openOrder()" mat-menu-item>MyOrder</button>
+            </mat-menu>
+        </div>
+        <div (click)="openCart()" class="cart">
+            <mat-icon matBadge={{batchLength}} matBadgeColor="warn" class="cartIcon" [ngStyle]="{'color':'white'}" fontSet="material-icons-outlined">shopping_cart</mat-icon>
+            <!-- <mat-icon class="cartIcon">shopping_cart</mat-icon> -->
+            <!-- <img src="../../../assets/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" class="cartIcon"> -->
+            <span  class="cartText">Cart</span>
+        </div>
+    </div>
+</div>
+<router-outlet ></router-outlet>
+<div class="Bookfooter">
+    <p class="footerContent">Copyright © 2023, Bookstore Private Limited. All Rights Reserved</p>
+</div>
+<!-- <div class="bookData">
+    <div class="bookHeading">
+        <div>Books</div>
+        <div>Sort by relevance</div>
+    </div>
+    
+    <div class="bookContent">
+        <router-outlet></router-outlet>
+    </div>
+</div> -->

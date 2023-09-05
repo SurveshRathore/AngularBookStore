@@ -1,0 +1,39 @@
+<form [formGroup]="siginForm" (ngSubmit)="onSubmit()">
+<mat-card-content class="loginContent">
+
+    <mat-card-actions class="topButton">
+        <mat-label class="topLoginButton">LOGIN</mat-label>
+        <mat-label routerLink="/user/register" class="topSignUpButton">SIGNUP</mat-label>
+    </mat-card-actions>
+
+    <mat-card-content class="emailContent">
+        <mat-label class="emailLabel">Email id</mat-label>
+        <input class="inputBox" type="email" matInput placeholder="" formControlName="emailid">
+    </mat-card-content>
+    <!-- <mat-form-field class="passContent">
+        <mat-label>Password</mat-label>
+        <mat-label class="passLabel">Password</mat-label>
+        <input class="inputBox" type="password" matInput placeholder="" formControlName="password">
+        <mat-error>Password is required!</mat-error>
+        <mat-label class="forgetText">Forget Password?</mat-label>
+    </mat-form-field> -->
+    <mat-card-content class="passContent">
+        <mat-label class="passLabel">Password</mat-label>
+        <input class="inputBox" type="password" matInput placeholder="" formControlName="password">
+        <mat-label class="forgetText">Forget Password?</mat-label>
+    </mat-card-content>
+    <mat-card-actions class="loginContent">
+        <button class="loginButton">Login</button>
+    </mat-card-actions>
+    <mat-card-content class="divider">
+        <mat-label>----------------------</mat-label>
+        <mat-card-title>OR</mat-card-title>
+        <mat-label>----------------------</mat-label>
+    </mat-card-content>
+    <mat-card-footer class="lowerButton">
+        <button class="facebookButton">Facebook</button>
+        <button class="googlebutton">Google</button>
+    </mat-card-footer>
+
+</mat-card-content>
+</form>

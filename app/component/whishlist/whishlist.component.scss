@@ -1,0 +1,120 @@
+.whishlistPage {
+    // border: 1px solid red;
+    width: 50%;
+    margin-left: 18%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.whishlistHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hometext {
+    font: normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    opacity: 1;
+}
+
+.whishlistText {
+
+    font: normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.whishlistDetails {
+    border: 1px solid gray;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.whishlistHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border: 1px solid #E4E4E4;
+    border-radius: 1px;
+    opacity: 1;
+
+}
+
+.whishlistBody {
+    display: flex;
+    margin-top: 10px;
+}
+
+//whishlistImg
+.Bookimg {
+    width: 65px;
+    height: 85px;
+}
+
+.whishlistBodyContent {
+    margin-left: 30px;
+}
+
+.booktitle {
+    text-align: left;
+    font: normal normal normal 14px/17px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.authorname {
+    text-align: left;
+    font: normal normal normal 10px/12px Lato;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.bookpricecontent {
+    display: flex;
+
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+.discountPrice {
+    text-align: left;
+    font: normal normal bold 15px/18px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.originalPrice {
+    text-align: left;
+    text-decoration: line-through;
+    font: normal normal normal 9px/11px Lato;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    opacity: 1;
+}
+
+.titleRemoveBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.delbtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 400px;
+    color: #9D9D9D;
+}
