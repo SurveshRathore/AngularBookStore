@@ -9,5 +9,6 @@ export class AuthguardService {
 
   gettoken(){
     return !!localStorage.getItem('token');
+    
   }
 }
