@@ -43,7 +43,7 @@ export class UserService {
     let header = {
       headers: new HttpHeaders({
         'Content-type' : 'application/json',
-        //'Authorization':'token'
+        'Authorization':'token'
       })
     }
     return this.httpservice.postService('controller/api/ResetPassword', reqdata, false, header)
