@@ -19,11 +19,13 @@ export class HttpService {
       )
   }
 
+
   // postServiceReset(url:string,reqData:any,token:boolean=true,httpOptions:any={})
   // {
   //   return this.httpClient.post(this.baseurl+url,reqData,token && httpOptions)
   // }
 
+  
   putService(url:string,reqData:any,token:boolean=true,httpOptions:any={})
   {
     return this.httpClient.put(this.baseurl+url,reqData,token && httpOptions)
@@ -39,7 +41,10 @@ export class HttpService {
 
   deleteService(url:string,reqData:any,token:boolean=true,httpOptions:any={})
   {
-    return this.httpClient.delete(this.baseurl+url,token && httpOptions)
+    return this.httpClient.delete(
+      this.baseurl+url,
+      token && httpOptions
+    )
   }
 
   patchService(url:string,reqData:any,token:boolean=true,httpOptions:any={})
